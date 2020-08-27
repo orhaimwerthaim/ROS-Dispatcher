@@ -41,7 +41,7 @@ def observe_can_action(robot,location, can):
         print "Service call failed: %s"%e
 
 
-def launcher(service_name, *args):
+def dispatcher(service_name, *args):
     #print "module name:"
     #print sys.modules[__name__]
     #print "module att:"
@@ -64,7 +64,7 @@ def handle_client_connection(client_socket):
         action_name = args[0]
         args.pop(0)
         print "start calling:" +action_name
-        observation = launcher(action_name, *args)
+        observation = dispatcher(action_name, *args)
         print "finished:" + action_name
         print "action observation:" + observation
         print "response to planner:'" + observation
@@ -105,8 +105,8 @@ def start_tcp_server(host, port):
 
 
 if __name__ == "__main__":
-    #launcher("pick", *['robot2','obj2','location2'])
-    #launcher("move_to_point", *['robot4','loc4','dest4','floor4'])
+    #dispatcher("pick", *['robot2','obj2','location2'])
+    #dispatcher("move_to_point", *['robot4','loc4','dest4','floor4'])
     # pick_client("1", "2", "3")
 
 
