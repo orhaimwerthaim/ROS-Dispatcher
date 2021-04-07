@@ -4,6 +4,12 @@ roscore
 rosrun plps_launcher move_to_point_server.py
 rosrun plps_launcher observe_can_server.py
 rosrun plps_launcher pick_server.py 
-rosrun plps_launcher launcher.py
+rosrun plps_launcher dispatcher.py
 2. run the planner
 3. look at the luancher.py terminal
+
+
+
+
+step 1 can be done using the command:  
+roslaunch plps_launcher icaps_experiment.launch
