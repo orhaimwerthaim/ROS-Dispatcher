@@ -16,5 +16,5 @@ roslaunch plps_launcher icaps_experiment.launch
 
 
 for the gazebo simulation (installation required):
-roslaunch armadillo2 armadillo2.launch gazebo:=true moveit:=true lidar:=true kinect:=true move_base:=true have_map:=true world_name:="/home/or/catkin_ws_elevator-master/src/gazebo_worlds/Building_37/building_37_sim_2.world" map:="/home/or/catkin_ws_elevator-master/src/armadillo_navigation/map/simulation_map_second_floor2.yaml" x:=-16.663 y:=19.042 z:=2.597
+roslaunch armadillo2 armadillo2.launch gazebo:=true moveit:=true lidar:=true kinect:=true amcl:=true move_base:=true have_map:=true world_name:="/home/or/catkin_ws_elevator-master/src/gazebo_worlds/Building_37/building_37_sim_2.world" map:="/home/or/catkin_ws_elevator-master/src/armadillo_navigation/map/simulation_map_second_floor2.yaml" x:=-16.663 y:=19.042 z:=2.597
 
