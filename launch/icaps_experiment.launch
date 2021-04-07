@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node name="observe_can_server"
+    pkg="plps_launcher"
+    type="observe_can_server.py"
+    output="screen"/>
+
+<node name="move_to_point_server"
+    pkg="plps_launcher"
+    type="move_to_point_server.py"
+    output="screen"/>
+
+<node name="pick_server"
+    pkg="plps_launcher"
+    type="pick_server.py"
+    output="screen"/>
+
+<node name="dispatcher"
+    pkg="plps_launcher"
+    type="dispatcher.py"
+    output="screen"/>
+
+</launch>
