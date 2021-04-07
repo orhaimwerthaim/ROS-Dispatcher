@@ -12,4 +12,5 @@ rosrun plps_launcher dispatcher.py
 
 
 step 1 can be done using the command:  
+roslaunch armadillo2 armadillo2.launch gazebo:=true moveit:=true lidar:=true kinect:=true move_base:=true
 roslaunch plps_launcher icaps_experiment.launch
